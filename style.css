@@ -39,6 +39,9 @@ p{
     font-size: 20px;
     font-weight: bold;
 }
+.header__div__navbar li a:hover {
+    color: tan;
+}
 /*main index*/
 
 .hero{
@@ -171,7 +174,9 @@ p{
     display: block;
     text-align: center;
 }
-
+.card__link:hover {
+    background-color: tan;
+}
 
 /*main-contacto*/
 .contactoh1{
@@ -197,6 +202,9 @@ p{
     border-radius: 10px;
     text-decoration: none;
 }
+.contacto-whatsapp:hover {
+    background-color: tan;
+}
 .contacto-img-whatsapp{
     width: 50px;
     margin: 20px;
@@ -207,6 +215,9 @@ p{
     color: black;
     border-radius: 10px;
     text-decoration: none;
+}
+.contacto-instagram:hover {
+    background-color: tan;
 }
 .contacto-img-instagram{
     width: 50px;
@@ -219,15 +230,20 @@ p{
     color: black;
     border-radius: 10px;
 }
+.contacto-gmail:hover {
+    background-color: tan;
+}
 .contacto-img-gmail{
     width: 50px;
     margin: 20px;
 
 }
 .contacto__ubicacion{
-    /* border-radius: 10px;
-    background-color: #e2e8f0; */
     padding: 15px ;
+    border-radius: 10px;
+}
+.contacto__ubicacion:hover {
+    background-color: tan;
 }
 .contacto__ubicacion iframe{
     border-radius: 15px;
