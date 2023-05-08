@@ -1,0 +1,284 @@
+/* general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/imagen/textura-de-grunge-diseño-gris-fondo-vintage-con-espacio-para-texto-o-imagen-192669688.jpg);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+p{
+    line-height: 1.5;
+}
+
+.header {
+    background-color: lightslategray;
+    padding: 30px 20px;
+}
+.header__div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__div__navbar{
+    display: flex;
+}
+.header__div__navbar li {
+    margin: 0 15px;
+}
+.header__div__navbar li a {
+    color: #e2e8f0;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*main index*/
+
+.hero{
+    padding: 60px 20px;
+    color: rgb(20, 11, 11)
+}
+.hero__container{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+}
+.hero__container-info h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+.hero__container-info p{
+    margin-bottom: 40px;
+    font-size: 30px;
+
+}
+
+.hero__container-video{
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.article-main{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.article-main h4{
+    font-size: 35px;
+}
+.article-main ul{
+    margin: 0 50px;
+    font-size: 25px;
+}
+/*footer index*/
+.whatsapp{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+.whatsapp a img{
+    width: 60px;
+}
+.instagram{
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+.instagram a img{
+    width: 60px;
+}
+
+
+/*main galeria*/
+.h1__galeria{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.casamiento{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.casamiento-p{
+    margin: 0 50px;
+    font-size: 35px;
+}
+.carousel-item img{
+    border-radius: 20px;
+}
+
+
+/* tarjetas */
+.albumes{
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.albumes__card{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.card__header img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.card__tittle{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.card__text{
+    margin-bottom: 40px;
+}
+.card__link{
+    background-color: lightslategray;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+/*main-contacto*/
+.contactoh1{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contacto{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 100px;
+    margin: auto;
+    justify-items: center;
+}
+
+.contacto-whatsapp{
+    font-size: 35px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.contacto-img-whatsapp{
+    width: 50px;
+    margin: 20px;
+}
+
+.contacto-instagram{
+    font-size: 35px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.contacto-img-instagram{
+    width: 50px;
+    margin: 20px;
+}
+
+.contacto-gmail{
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    border-radius: 10px;
+}
+.contacto-img-gmail{
+    width: 50px;
+    margin: 20px;
+
+}
+.contacto__ubicacion{
+    /* border-radius: 10px;
+    background-color: #e2e8f0; */
+    padding: 15px ;
+}
+.contacto__ubicacion iframe{
+    border-radius: 15px;
+
+}
+.contacto__ubicacion h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+/*main presupuesto*/
+.presupuesto h4{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+/* .button-presupuesto{
+    display: ;
+    align-items: center;
+    border-radius: 10px;
+    width: 100px;
+    text-decoration: none;
+
+} */
+.form{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: auto;
+    background-color: lightslategray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form label{
+    font-size: 35px;
+}
+/* .presupuesto label{
+    font-size: 40px;
+    color: black;
+} */
+/* .presupuesto__nombre{
+    margin: 20px;
+} */
+option{
+    font-size: 20px;
+    color: black;
+}
+button{
+    font-size: 15px;
+    color: black;
+}
