@@ -16,6 +16,19 @@ ul {
 p{
     line-height: 1.5;
 }
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/ttf/Lato-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/ttf/Lato-Bold.ttf');
+    font-weight: bold;
+}
+
+/*  Encabezado */
 
 .header {
     background-color: lightslategray;
@@ -41,6 +54,9 @@ p{
 }
 .header__div__navbar li a:hover {
     color: tan;
+}
+.menu-mobile{
+    display: none;
 }
 /*main index*/
 
@@ -260,16 +276,8 @@ p{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-
 }
-/* .button-presupuesto{
-    display: ;
-    align-items: center;
-    border-radius: 10px;
-    width: 100px;
-    text-decoration: none;
 
-} */
 .form{
     max-width: 1200px;
     display: grid;
@@ -283,13 +291,7 @@ p{
 .form label{
     font-size: 35px;
 }
-/* .presupuesto label{
-    font-size: 40px;
-    color: black;
-} */
-/* .presupuesto__nombre{
-    margin: 20px;
-} */
+
 option{
     font-size: 20px;
     color: black;
@@ -297,4 +299,66 @@ option{
 button{
     font-size: 15px;
     color: black;
+}
+/* media queries index */
+@media (min-width:300px) and (max-width:500px) {
+    .header__div__navbar{
+        display: none;
+    }
+    .hero__container-info h1{
+        font-size: 30px;
+    }
+    .hero__container-info p{
+        font-size: 25px;
+        margin: auto;
+    }
+    .article-main{
+        display: block;    
+    }
+    .hero__container-video{
+        width: 250px;
+        margin: auto;
+    }
+    .article-main ul{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .article-main ul h4{
+        font-size: 25px;
+    }
+    .article-main ul li{
+        font-size: 25px;
+    }
+    .whatsapp a img{
+        width: 40px;
+    }
+    .instagram a img{
+       width: 40px;
+    }
+}
+/* media queries galeria */
+@media (min-width:300px) and (max-width:500px) {
+    .h1__galeria{
+        font-size: 30px;
+    }
+    .casamiento{
+        display: block;
+        margin: auto;
+    }
+    .casamiento-p{
+        font-size: 25px;
+    }
+    .albumes__card{
+        display: block;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card__tittle{
+        font-size: 20px;
+        text-align: center;
+    }
+    .card__text{
+        font-size: 20px;
+    }
 }
