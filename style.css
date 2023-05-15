@@ -271,7 +271,7 @@ p{
     font-size: 40px;
 }
 /*main presupuesto*/
-.presupuesto h4{
+/* .presupuesto h4{
     font-size: 35px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -299,7 +299,7 @@ option{
 button{
     font-size: 15px;
     color: black;
-}
+} */
 /* media queries index */
 @media (min-width:300px) and (max-width:500px) {
     .header__div__navbar{
