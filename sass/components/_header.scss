@@ -1,0 +1,48 @@
+.header {
+    background-color: lightslategray;
+    padding: 30px 20px;
+
+        &__div{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                &-menu{
+                    display: flex;
+                    
+                    
+                    H2{
+                        font-weight: bold;
+                        font-size: 50px;
+                    }
+                     
+                    
+
+                    li{
+                        margin: 0 15px;
+
+                        a{
+                            color: #e2e8f0;
+                            font-size: 20px;
+                            font-weight: bold;
+                            &:hover{
+                                color: tan;
+                            }
+                        }
+                    }
+                }
+        }
+        &menu-mobile{
+            display: none;
+        }
+}
+
+// @media (min-width:300px) and (max-width:500px) {
+//     .header__div-menu{
+//         display: none;
+//     }
+
+
+// }

@@ -1,39 +1,10 @@
-/* general*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-image: url(./assets/imagen/textura-de-grunge-diseño-gris-fondo-vintage-con-espacio-para-texto-o-imagen-192669688.jpg);
-}
-a {
-    text-decoration: none;
-}
-ul {
-    list-style-type: none;
-}
-p{
-    line-height: 1.5;
-}
-@font-face {
-    font-family: 'Lato';
-    src: url('./assets/ttf/Lato-Regular.ttf');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('./assets/ttf/Lato-Bold.ttf');
-    font-weight: bold;
-}
 
 /*  Encabezado */
-
-.header {
+/* .header {
     background-color: lightslategray;
     padding: 30px 20px;
 }
+
 .header__div {
     max-width: 1200px;
     margin: 0 auto;
@@ -41,26 +12,26 @@ p{
     justify-content: space-between;
     align-items: center;
 }
-.header__div__navbar{
+.header__div-menu{
     display: flex;
 }
-.header__div__navbar li {
+.header__div-menu li {
     margin: 0 15px;
 }
-.header__div__navbar li a {
+.header__div-menu li a {
     color: #e2e8f0;
     font-size: 20px;
     font-weight: bold;
 }
-.header__div__navbar li a:hover {
+.header__div-menu li a:hover {
     color: tan;
 }
 .menu-mobile{
     display: none;
-}
+} */
 /*main index*/
 
-.hero{
+/* .hero{
     padding: 60px 20px;
     color: rgb(20, 11, 11)
 }
@@ -84,7 +55,7 @@ p{
 
 }
 
-.hero__container-video{
+.article-main__video{
     width: 100%;
     margin: 0 10px;
     border-radius: 10px;
@@ -100,9 +71,9 @@ p{
 .article-main ul{
     margin: 0 50px;
     font-size: 25px;
-}
+} */
 /*footer index*/
-.whatsapp{
+/* .whatsapp{
     position: fixed;
     bottom: 40px;
     right: 20px;
@@ -117,11 +88,11 @@ p{
 }
 .instagram a img{
     width: 60px;
-}
+} */
 
 
 /*main galeria*/
-.h1__galeria{
+/* .h1__galeria{
     text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
@@ -142,11 +113,11 @@ p{
 }
 .carousel-item img{
     border-radius: 20px;
-}
+} */
 
 
 /* tarjetas */
-.albumes{
+/* .albumes{
     margin-top: 60px;
     padding: 0 20px;
 }
@@ -192,10 +163,10 @@ p{
 }
 .card__link:hover {
     background-color: tan;
-}
+} */
 
 /*main-contacto*/
-.contactoh1{
+/* .contactoh1{
     font-size: 40px;
     text-align: center;
     margin: auto;
@@ -212,41 +183,41 @@ p{
     justify-items: center;
 }
 
-.contacto-whatsapp{
+.contacto__whatsapp{
     font-size: 35px;
     color: black;
     border-radius: 10px;
     text-decoration: none;
 }
-.contacto-whatsapp:hover {
+.contacto__whatsapp:hover {
     background-color: tan;
 }
-.contacto-img-whatsapp{
+.contacto__whatsapp-img{
     width: 50px;
     margin: 20px;
 }
 
-.contacto-instagram{
+.contacto__instagram{
     font-size: 35px;
     color: black;
     border-radius: 10px;
     text-decoration: none;
 }
-.contacto-instagram:hover {
+.contacto__instagram:hover {
     background-color: tan;
 }
-.contacto-img-instagram{
+.contacto__instagram img{
     width: 50px;
     margin: 20px;
 }
 
-.contacto-gmail{
+.contacto__gmail{
     text-decoration: none;
     font-size: 35px;
     color: black;
     border-radius: 10px;
 }
-.contacto-gmail:hover {
+.contacto__gmail:hover {
     background-color: tan;
 }
 .contacto-img-gmail{
@@ -269,7 +240,7 @@ p{
     text-align: center;
     margin-bottom: 50px;
     font-size: 40px;
-}
+} */
 /*main presupuesto*/
 /* .presupuesto h4{
     font-size: 35px;

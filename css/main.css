@@ -1,1 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/ttf/Lato-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/ttf/Lato-Bold.ttf");
+  font-weight: bold;
+}
+body {
+  background-image: url(/assets/imagen/fondo-vintage.jpg);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.header {
+  background-color: lightslategray;
+  padding: 30px 20px;
+}
+.header__div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__div-menu {
+  display: flex;
+}
+.header__div-menu H2 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.header__div-menu li {
+  margin: 0 15px;
+}
+.header__div-menu li a {
+  color: #e2e8f0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header__div-menu li a:hover {
+  color: tan;
+}
+.headermenu-mobile {
+  display: none;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+.whatsapp img {
+  width: 60px;
+}
+
+.instagram {
+  position: fixed;
+  bottom: 40px;
+  right: 100px;
+}
+.instagram img {
+  width: 60px;
+}
+
+.hero {
+  padding: 60px 20px;
+  color: rgb(20, 11, 11);
+}
+.hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.hero__container h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero__container p {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.hero .article-main {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero .article-main__video {
+  width: 100%;
+  border-radius: 10px;
+}
+.hero .article-main .lista {
+  display: grid;
+  justify-content: center;
+}
+.hero .article-main .lista h4 {
+  font-size: 35px;
+}
+.hero .article-main .lista li {
+  font-size: 25px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.hero .article-main .lista li a {
+  border-radius: 10px;
+  background-color: lightslategray;
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+}
+.hero .article-main .lista li a:hover {
+  background-color: tan;
+}
+
+.h1__galeria {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.casamiento {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.casamiento p {
+  margin: 0 50px;
+  font-size: 35px;
+}
+.casamiento img {
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.albumes {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.albumes__card {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.card p {
+  margin-bottom: 40px;
+}
+.card a {
+  background-color: lightslategray;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.card a:hover {
+  background-color: tan;
+  transform: translateY(-15px);
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.contacto {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 100px;
+  margin: auto;
+  justify-items: center;
+}
+.contacto__whatsapp a {
+  font-size: 35px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.contacto__whatsapp a:hover {
+  background-color: tan;
+}
+.contacto__whatsapp img {
+  width: 50px;
+  margin: 20px;
+}
+.contacto__instagram a {
+  font-size: 35px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.contacto__instagram a:hover {
+  background-color: tan;
+}
+.contacto__instagram img {
+  width: 50px;
+  margin: 20px;
+}
+.contacto__gmail a {
+  text-decoration: none;
+  font-size: 35px;
+  color: black;
+  border-radius: 10px;
+}
+.contacto__gmail a:hover {
+  background-color: tan;
+}
+.contacto__gmail img {
+  width: 50px;
+  margin: 20px;
+}
+.contacto__ubicacion {
+  padding: 15px;
+  border-radius: 10px;
+}
+.contacto__ubicacion:hover {
+  background-color: tan;
+}
+.contacto__ubicacion h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.contacto__ubicacion iframe {
+  border-radius: 15px;
+}
+
+h4 {
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form {
+  max-width: 1200px;
+  margin: auto;
+  background-color: lightslategray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.presupuesto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.presupuesto label {
+  font-size: 35px;
+}
+.presupuesto input {
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+.presupuesto input:focus {
+  background-color: rgb(229, 203, 169);
+}
+.presupuesto select {
+  border-radius: 10px;
+  margin: 10px;
+}
+.presupuesto select option {
+  font-size: 20px;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  border-radius: 10px;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+.button:hover {
+  background-color: tan;
+  transform: translateY(-10px);
+}
