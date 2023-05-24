@@ -36,6 +36,9 @@
                      }
          }
     }
+    .menu-mobile{
+        display: none;
+    }
 }
 @media (min-width: $bpSmall) and (max-width: $bpMedium) {
 .header__div-menu{
