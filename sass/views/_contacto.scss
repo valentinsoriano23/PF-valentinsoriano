@@ -8,8 +8,8 @@ h1{
 
 .contacto{
     max-width: 1200px;
-    display: grid;
-    grid-template-columns:1fr;
+    // display: grid;
+    // grid-template-columns:1fr;
     gap: 100px;
     margin: auto;
     justify-items: center;
@@ -80,4 +80,10 @@ h1{
                     border-radius: 15px;
                 }
         }
+}
+@media (min-width: $bpSmall) {
+    .contacto{
+        display: block;
+        text-align: center;
+    }
 }

@@ -5,8 +5,8 @@
         &__container{
             max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
+            // display: grid;
+            // grid-template-columns: 1fr;
             gap: 50px;
 
             h1{
@@ -22,8 +22,8 @@
         }
         .article-main{
             max-width: 1200px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
 
                 &__video{
                     width: 100%;
@@ -62,5 +62,24 @@
                    
                 }
         }    
+}
+
+@media (min-width: $bpMedium){
+ .hero__container{
+    display: block;
+ }
+ .article-main{
+    display: block;
+ }
+}
+@media (min-width: $bpLarge) {
+    .hero__container{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+     .article-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     } 
 }
 

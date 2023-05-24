@@ -8,18 +8,13 @@ h4{
 
 .form{
     max-width: 1200px;
-    // display: flex;
-    // flex-direction:column;
-    // align-items: center;
-    // gap: 50px;
-    margin: auto;
     background-color: lightslategray;
     border-radius: 10px;
     padding: 20px;
 }    
 .presupuesto{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
     
     label {
         font-size: 35px;
@@ -57,4 +52,25 @@ h4{
             background-color: tan;
             transform: translateY(-10px);
         }
+}
+@media (min-width: $bpLarge) {
+    .form {
+        margin: auto;
+    }
+    .presupuesto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: $bpSmall) {
+
+    .formulario{
+        margin: 20px;
+    }
+    .presupuesto{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+     }
+
 }
