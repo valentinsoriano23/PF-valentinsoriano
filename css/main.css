@@ -65,7 +65,7 @@ p {
     display: none;
   }
 }
-@media (min-width: 350px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   .header__div-menu {
     display: none;
   }
@@ -159,7 +159,7 @@ p {
   transform: translateY(-15px);
 }
 
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   .casamiento {
     display: block;
   }
@@ -247,7 +247,7 @@ h1 {
   border-radius: 15px;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   .contacto {
     display: block;
     text-align: center;
@@ -311,7 +311,7 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 350px) {
+@media (min-width: 300px) {
   .formulario {
     margin: 20px;
   }
