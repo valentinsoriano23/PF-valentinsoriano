@@ -1,18 +1,39 @@
-.whatsapp{
-    position: fixed;
-    bottom: 40px;
-    right: 20px;
+.footer1{
+    // height: 400px;
+    margin-top: 200px;
+    padding: 120px 20px;
+    background-image: url("/assets/imagen/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+        &__lista{
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns:1fr;
+            
+            
+            h3{
+                color: #fff;
+                font-size: 35px;
+                margin-bottom: 10px;  
+            }
 
-        img{
-            width: 60px;
-        }
-}
-.instagram{
-    position: fixed;
-    bottom: 40px;
-    right: 100px;
-
-        img{
-            width: 60px;
+            li{
+                color: #fff;
+                font-size: 25px;
+                margin-top: 10px;
+                 &:hover {
+                    color: rgb(153, 169, 143);
+                 }
+                 a{
+                    border-style: solid;
+                    border-radius: 10px;
+                    color: #fff;
+                        &:hover{
+                            background-color:rgb(153, 169, 143);
+                        }
+                 }
+            }
         }
 }

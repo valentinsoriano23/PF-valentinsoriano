@@ -1,7 +1,9 @@
 .header {
-    background-color: lightslategray;
+    background-color: rgb(153, 169, 143);
     padding: 30px 20px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
         &__div{
             max-width: 1200px;
@@ -9,18 +11,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            h2{
+                border-style: solid;
+                border-radius: 10px;
+                padding: 5px;
+
+                a{
+                    color: black;
+                       
+                }
+                    &:hover{
+                        background-color: rgb(255, 248, 222);
+                    }
+            }
         }
 }
 
 @media (min-width: $bpMedium) {
     .header__div{
          &-menu{
-             display: flex;
-                  
-                  
+             display: flex;  
                      H2{
                          font-weight: bold;
                          font-size: 50px;
+                         color: #fff;
                      }
                    
                   
@@ -28,10 +42,10 @@
                          margin: 0 15px;
                          a{
                              color: #e2e8f0;
-                             font-size: 20px;
+                             font-size: 30px;
                              font-weight: bold;
                              &:hover{
-                                 color: tan;
+                                 color: rgb(255, 248, 222);
                              }
                          }
                      }
@@ -47,7 +61,7 @@
 }
 
 .container-fluid{
-    background-color: lightslategray;
+    background-color: rgb(153, 169, 143);
 }
 
 }

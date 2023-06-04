@@ -4,11 +4,12 @@ h4{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-weight: bold;
 }
 
 .form{
     max-width: 1200px;
-    background-color: lightslategray;
+    
     border-radius: 10px;
     padding: 20px;
 }    
@@ -25,7 +26,7 @@ h4{
         border-radius: 10px;
         margin: 10px;
         &:focus{
-            background-color: rgb(229, 203, 169);
+            background-color: rgb(193, 208, 181);
         }
     }
     select{
@@ -48,8 +49,8 @@ h4{
     margin: auto;
     margin-top: 20px;
     padding: 5px;
-        &:hover{
-            background-color: tan;
+    background-color: rgb(193, 208, 181);
+        &:hover{     
             transform: translateY(-10px);
         }
 }

@@ -14,9 +14,21 @@
     src: url('./assets/ttf/Lato-Bold.ttf');
     font-weight: bold;
 }
+// body{
+//     background-image: url(/assets/imagen/fondo-vintage.jpg);
+// }
 body{
-    background-image: url(/assets/imagen/fondo-vintage.jpg);
+    font-family: "Lato";
+    background-color: rgb(255, 248, 222);
+    // background-image: url(/assets/imagen/footer.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    // background-attachment: fixed;
 }
+// footer{
+//     background-color: rgb(214, 232, 219);
+// }
 a {
     text-decoration: none;
 }
@@ -26,3 +38,6 @@ ul {
 p{
     line-height: 1.5;
 }
+// main{
+//     background-color: rgb(193, 208, 181);
+// }

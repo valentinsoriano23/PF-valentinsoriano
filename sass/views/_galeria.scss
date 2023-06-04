@@ -1,7 +1,8 @@
 .h1__galeria{
     text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .casamiento{
@@ -10,14 +11,16 @@
     // grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
     margin: 0 auto;
-
+   
         p{
             margin: 0 50px;
-            font-size: 35px;
+            font-size: 30px;
         }
         img{
             border-radius: 20px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            // padding: 10px;
+
         }
 
 }
@@ -35,12 +38,15 @@
         }
     }
 .card{
-        background-color: #fff;
+        background-color: rgb(214, 232, 219);
         border-radius: 10px;
         padding: 20px;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        box-shadow: 20px 21px 11px 0px rgba(0,0,0,0.2);
         margin-bottom: 50px;
-                    
+            &:hover{
+                transform: translateY(-15px);
+            }
+
             img{
                  width: 100%;
                 border-radius: 10px;
@@ -48,17 +54,17 @@
                 object-fit: cover;
             }
 
-                    
+
             h2{
                 margin-bottom: 20px;
                 font-size: 20px;
-                text-align: center;  
+                text-align: center;
                 }
             p{
                 margin-bottom: 40px;
             }
             a{
-                background-color: lightslategray;
+                background-color: rgb(193, 208, 181);
                 color: #fff;
                 font-weight: bold;
                 padding: 15px 0;
@@ -66,18 +72,19 @@
                 width: 100%;
                 display: block;
                 text-align: center;
-
-                    &:hover{
-                        background-color: tan;
-                        transform: translateY(-15px);
-                    }
             }
     }
-    @media (min-width: $bpSmall) {
+    @media (min-width: $bpSmall) and (max-width: $bpMedium) {
         .casamiento{
             display: block;
-            // margin: 20px;
+            margin: 0 10px;
+            p{
+                margin-top: 10px;
+            }
         }
+        // .carousel-item{
+        //     margin: 0 20xp;
+        // }
         .albumes__card{
             display: block;
         }
@@ -86,12 +93,12 @@
         .casamiento{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            
+
         }
         .albumes__card{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 50px;
         }
-      
+
     }
