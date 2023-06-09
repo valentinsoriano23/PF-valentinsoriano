@@ -7,20 +7,23 @@ h1{
 }
 
 .contacto{
-    max-width: 1200px;
+    // max-width: 1200px;
     // display: grid;
     // grid-template-columns:1fr;
-    gap: 100px;
-    margin: auto;
-    justify-items: center;
-
+    // gap: 100px;
+    // margin: auto;
+    // justify-items: center;
+    display: block;
+    text-align: center;
+        
         &__whatsapp{
+            
                 a{
                     font-size: 35px;
                     color: black;
                     border-radius: 10px;
                     text-decoration: none;
-
+                    margin: 20px;
                     &:hover{
                         background-color: rgb(153, 169, 143);
                     }
@@ -38,7 +41,7 @@ h1{
                     color: black;
                     border-radius: 10px;
                     text-decoration: none;
-
+                    margin: 20px;
                     &:hover{
                         background-color: rgb(153, 169, 143);
                     }
@@ -54,6 +57,7 @@ h1{
                     font-size: 35px;
                     color: black;
                     border-radius: 10px;
+                    margin: 20px;
                     &:hover{
                         background-color: rgb(153, 169, 143);
                     }
@@ -78,12 +82,23 @@ h1{
 
                 iframe{
                     border-radius: 15px;
+                    margin: 20px;
                 }
         }
 }
-@media (min-width: $bpSmall) {
+// @media (min-width: $bpSmall) {
+//     .contacto{
+//         display: block;
+//         text-align: center;
+//     }
+// }
+@media (min-width: $bpLarge) {
     .contacto{
-        display: block;
-        text-align: center;
-    }
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 100px;
+        margin: auto;
+        justify-items: center;
+    }    
 }

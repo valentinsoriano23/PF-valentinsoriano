@@ -183,9 +183,6 @@ p {
   box-shadow: 20px 21px 11px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
 }
-.card:hover {
-  transform: translateY(-15px);
-}
 .card img {
   width: 100%;
   border-radius: 10px;
@@ -209,6 +206,9 @@ p {
   width: 100%;
   display: block;
   text-align: center;
+}
+.card a:hover {
+  transform: translateY(-15px);
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
@@ -243,16 +243,15 @@ h1 {
 }
 
 .contacto {
-  max-width: 1200px;
-  gap: 100px;
-  margin: auto;
-  justify-items: center;
+  display: block;
+  text-align: center;
 }
 .contacto__whatsapp a {
   font-size: 35px;
   color: black;
   border-radius: 10px;
   text-decoration: none;
+  margin: 20px;
 }
 .contacto__whatsapp a:hover {
   background-color: rgb(153, 169, 143);
@@ -266,6 +265,7 @@ h1 {
   color: black;
   border-radius: 10px;
   text-decoration: none;
+  margin: 20px;
 }
 .contacto__instagram a:hover {
   background-color: rgb(153, 169, 143);
@@ -279,6 +279,7 @@ h1 {
   font-size: 35px;
   color: black;
   border-radius: 10px;
+  margin: 20px;
 }
 .contacto__gmail a:hover {
   background-color: rgb(153, 169, 143);
@@ -301,12 +302,17 @@ h1 {
 }
 .contacto__ubicacion iframe {
   border-radius: 15px;
+  margin: 20px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 992px) {
   .contacto {
-    display: block;
-    text-align: center;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+    margin: auto;
+    justify-items: center;
   }
 }
 h4 {
@@ -379,37 +385,36 @@ h4 {
 .hero {
   padding: 60px 20px;
 }
-.hero__container {
+.hero__container .hero__container-info {
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto;
 }
-.hero__container h1 {
+.hero__container .hero__container-info h1 {
   font-size: 50px;
   margin-bottom: 20px;
   color: black;
   font-weight: bold;
 }
-.hero__container p {
+.hero__container .hero__container-info p {
   margin-bottom: 40px;
   font-size: 30px;
   color: black;
   text-align: center;
 }
-.hero .article-main__video {
+.hero__container .hero__container-info video {
   width: 100%;
   border-radius: 10px;
   box-shadow: 20px 21px 11px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
-.hero .article-main__video:hover {
+.hero__container .hero__container-info video:hover {
   transform: translateY(-10px);
 }
 
 @media (min-width: 992px) {
-  .article-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .hero__container-info {
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 100px;
     gap: 50px;
   }
 }
